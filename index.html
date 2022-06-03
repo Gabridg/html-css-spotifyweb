@@ -10,6 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=PT+Sans:ital,wght@0,700;1,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CSS/style.css">
     <title>Spotify</title>
 </head>
@@ -23,7 +26,7 @@
             </div>
         </header>
         <div class="sidebar d-flex flex-col s-between">
-            <nav class="navbar d-flex">
+            <nav class="navbar d-flex container-sidebar flex-col">
                 <ul>
                     <li>
                         <a href="#">
@@ -34,30 +37,48 @@
                     <li>
                         <a href="#">
                             <img src="img/home.svg" alt="Home Logo">
+                            <div class="tablet-view">Home</div>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="img/search.svg" alt="serach">
+                            <div class="tablet-view">Cerca</div>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="img/libreria.svg" alt="library">
+                            <div class="tablet-view">Cerca</div>
                         </a>
                     </li>
                 </ul>
+                <div class="tablet-view mg-top-15">
+                    <h2>PLAYLIST</h2>
+                    <ul class="mg-top-15">
+                        <li><a href="#"><i class="fa-solid fa-plus"></i> Crea Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                    </ul>
+                </div>
             </nav>
-            <nav class="user-nav d-flex">
+            <nav class="user-nav d-flex container-sidebar">
                 <ul>
                     <li>
                         <a href="#">
                             <img src="img/download.svg" alt="Download" id="download">
+                            <div class="tablet-view download-txt">Installa app</div>
                         </a>
                     </li>
                     <li>
                         <a href="#" id="profile">
                             <img src="img/profile.svg" alt="Profile Logo">
+                            <h4 class="tablet-view">John Doe</h4>
                         </a>
                     </li>
                 </ul>

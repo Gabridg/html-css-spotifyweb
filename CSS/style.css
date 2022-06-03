@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+
 }
 
 /* Utilities */
@@ -38,6 +41,11 @@
 .container {
     max-width: 450px;
     margin: 0 auto;
+}
+
+.container-sidebar {
+    max-width: 90%;
+    margin: 0 auto
 }
 
 /* Generals */
@@ -134,7 +142,7 @@ nav li {
     height: 15px;
 }
 
-#profile {
+#profile img {
     display: block;
     background-color: #666;
     border-radius: 50%;
@@ -144,6 +152,34 @@ nav li {
 
 .tablet-view {
     display: none;
+    vertical-align: super;
+    color: #666;
+}
+
+.tablet-view h2 {
+    color: #fff;
+    font-size: 13px;
+}
+
+.tablet-view a {
+    color: #666;
+}
+
+.fa-plus {
+    color: #000;
+    background-color: #666;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.user-nav li:first-child {
+    border-bottom: 1px solid #666;
+}
+
+.download-txt {
+    font-size: 10px;
 }
 
 /* Central Section */
@@ -246,7 +282,24 @@ nav li {
         display: none;
     }
 
+    .tablet-view img {
+        height: 40px;
+    }
+
     .tablet-view {
-        display: block;
+        display: inline-block;
+    }
+
+    nav li {
+        text-align: left;
+    }
+
+
+
+
+    /* Header btn */
+
+    header a {
+        width: 235px
     }
 }
