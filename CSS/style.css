@@ -207,3 +207,24 @@ nav li {
     font-size: 10px;
     font-weight: 900;
 }
+
+/* Footer */
+
+.footer-row .column {
+    justify-content: center;
+    width: calc(100% / 3);
+}
+
+.footer-row img {
+    width: 25%;
+}
+
+.text-song h6 {
+    color: #fff;
+}
+
+.text-song address {
+    color: #666;
+    font-size: 10px;
+    font-weight: 900;
+}
