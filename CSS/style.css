@@ -142,6 +142,10 @@ nav li {
     line-height: 22px;
 }
 
+.tablet-view {
+    display: none;
+}
+
 /* Central Section */
 .central .d-flex {
     flex-direction: row;
@@ -213,6 +217,7 @@ nav li {
 .footer-row .column {
     justify-content: center;
     width: calc(100% / 3);
+    height: 100%;
 }
 
 .footer-row img {
@@ -227,4 +232,21 @@ nav li {
     color: #666;
     font-size: 10px;
     font-weight: 900;
+}
+
+
+/* Responsive */
+
+@media screen and (min-width: 639px) {
+    .sidebar {
+        width: 25%;
+    }
+
+    #logo-phone {
+        display: none;
+    }
+
+    .tablet-view {
+        display: block;
+    }
 }
