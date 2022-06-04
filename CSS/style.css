@@ -45,7 +45,8 @@
 
 .container-sidebar {
     max-width: 90%;
-    margin: 0 auto
+    margin: 0 auto;
+    height: 100%;
 }
 
 /* Generals */
@@ -168,10 +169,10 @@ nav li {
 .fa-plus {
     color: #000;
     background-color: #666;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     text-align: center;
-    line-height: 40px;
+    line-height: 30px;
 }
 
 .user-nav li:first-child {
@@ -180,6 +181,16 @@ nav li {
 
 .download-txt {
     font-size: 10px;
+}
+
+#profile img {
+    display: inline-block;
+}
+
+h4.tablet-view {
+    display: inline;
+    color: #fff;
+    display: none;
 }
 
 /* Central Section */
@@ -210,6 +221,7 @@ nav li {
     width: 25%;
     margin-left: 40px;
 }
+
 
 /* Music Played */
 
@@ -271,7 +283,7 @@ nav li {
 }
 
 
-/* Responsive */
+/* Responsive Small*/
 
 @media screen and (min-width: 639px) {
     .sidebar {
@@ -294,12 +306,63 @@ nav li {
         text-align: left;
     }
 
-
+    h4.tablet-view {
+        display: inline-block;
+    }
 
 
     /* Header btn */
 
     header a {
         width: 235px
+    }
+
+    /* main */
+
+    .central {
+        margin-left: 25%;
+    }
+
+    .central .d-flex li {
+        width: calc(100% / 3);
+        text-align: center;
+    }
+
+    .central li hr {
+        margin-left: 50px;
+    }
+}
+
+
+
+/* Responsive Middle view */
+
+@media screen and (min-width: 878px) {
+    /* Central section */
+
+    .container {
+        max-width: 600px;
+    }
+
+
+    .central .d-flex li {
+        width: calc(100% / 5);
+        padding: 0;
+    }
+
+    .central li hr {
+        margin-left: 40px;
+    }
+
+    .card img {
+        height: 140px;
+    }
+
+    .column {
+        width: calc(100% / 4);
+    }
+
+    .central .music .d-flex {
+        justify-content: flex-start;
     }
 }
