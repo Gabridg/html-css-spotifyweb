@@ -356,7 +356,7 @@ h4.tablet-view {
 
 @media screen and (min-width: 639px) {
     .sidebar {
-        width: 25%;
+        width: 200px;
     }
 
     #logo-phone {
@@ -389,7 +389,7 @@ h4.tablet-view {
     /* main */
 
     .central {
-        margin-left: 25%;
+        margin-left: 200px;
     }
 
     .central .d-flex li {
@@ -441,5 +441,38 @@ h4.tablet-view {
 
     .user-nav ul {
         width: 100%;
+    }
+}
+
+
+/* Responsive Large */
+
+@media screen and (min-width: 1439px) {
+    .central .d-flex li {
+        width: calc(100% / 6);
+    }
+
+    main .central nav {
+        margin: 0 250px;
+    }
+
+    .container {
+        max-width: 1000px;
+    }
+
+    .main-column {
+        width: calc(100% / 6);
+    }
+
+    .footer-row .column-footer {
+        justify-content: flex-start;
+    }
+
+    .footer-row .song-player {
+        justify-content: center;
+    }
+
+    .footer-row .control-device {
+        justify-content: flex-end;
     }
 }
