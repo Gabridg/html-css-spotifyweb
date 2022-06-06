@@ -60,7 +60,7 @@ body {
 main {
     background-color: var(--primary-color);
     color: #fff;
-    height: 90vh;
+    height: calc(100vh - 90px);
     overflow-y: scroll;
 }
 
@@ -96,7 +96,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 10vh;
+    height: 90px;
 }
 
 
