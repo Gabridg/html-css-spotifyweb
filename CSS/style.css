@@ -123,7 +123,7 @@ header div {
 
 /* Sidebar */
 
-.navbar,
+.sideb .navbar,
 .user-nav {
     justify-content: center;
     padding-top: 10px;
@@ -234,7 +234,7 @@ h4.tablet-view {
     margin-top: 30px;
 }
 
-.column {
+.main-column {
     width: 50%;
     min-height: 300px;
 }
@@ -262,7 +262,11 @@ h4.tablet-view {
 
 /* Footer */
 
-.footer-row .column {
+.footer-row {
+    height: 100%;
+}
+
+.footer-row .column-footer {
     justify-content: center;
     width: calc(100% / 3);
     height: 100%;
@@ -281,6 +285,9 @@ h4.tablet-view {
     font-size: 10px;
     font-weight: 900;
 }
+
+
+
 
 
 /* Responsive Small*/
@@ -331,6 +338,10 @@ h4.tablet-view {
     .central li hr {
         margin-left: 50px;
     }
+
+    .user-nav {
+        justify-content: flex-start;
+    }
 }
 
 
@@ -358,11 +369,15 @@ h4.tablet-view {
         height: 140px;
     }
 
-    .column {
-        width: calc(100% / 4);
+    .main-column {
+        width: 25%;
     }
 
     .central .music .d-flex {
         justify-content: flex-start;
+    }
+
+    .user-nav ul {
+        width: 100%;
     }
 }
