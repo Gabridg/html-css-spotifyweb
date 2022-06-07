@@ -475,4 +475,8 @@ h4.tablet-view {
     .footer-row .control-device {
         justify-content: flex-end;
     }
+
+    .player-time .time-bar {
+        width: 380px;
+    }
 }
